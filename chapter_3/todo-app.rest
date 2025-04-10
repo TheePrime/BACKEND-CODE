@@ -28,3 +28,13 @@ Content-Type: application/json
 
 ### Get all todos GET /todos
 GET http://localhost:5000/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQzOTY1ODg4LCJleHAiOjE3NDQwNTIyODh9.IraeNrIAxkI0eXN8TzTNbLhvt--Cc5FGs1IDSvBeoZQ
+
+### Create a todo POST /todos
+POST http://localhost:5000/todos
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQzOTY1ODg4LCJleHAiOjE3NDQwNTIyODh9.IraeNrIAxkI0eXN8TzTNbLhvt--Cc5FGs1IDSvBeoZQ
+Content-Type: application/json
+
+{
+    "task":"Finish coding"
+}
