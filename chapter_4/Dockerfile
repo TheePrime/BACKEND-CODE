@@ -15,12 +15,9 @@ RUN npm install
 # Copy the current directory contents into the container at /app
 COPY . .
 
-#Initialize the prisma 
-RUN npx prisma generate
-
 
 # Expose port 3000 to the outside world
 EXPOSE 3000
 
 # Define the command to run the app when the container starts
-CMD ["sh", "-c", "npx prisma generate && npx prisma migrate deploy && node ./src/server.js"]
+CMD ["node", "./src/server.js"]

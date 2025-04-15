@@ -128,7 +128,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "/app/src/generated/prisma",
+      "value": "C:\\Users\\Admin\\OneDrive\\Desktop\\Projects\\BACKEND-FULL-COURSE\\chapter_4\\src\\generated\\prisma",
       "fromEnvVar": null
     },
     "config": {
@@ -137,12 +137,12 @@ const config = {
     "binaryTargets": [
       {
         "fromEnvVar": null,
-        "value": "linux-musl-openssl-3.0.x",
+        "value": "windows",
         "native": true
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "/app/prisma/schema.prisma",
+    "sourceFilePath": "C:\\Users\\Admin\\OneDrive\\Desktop\\Projects\\BACKEND-FULL-COURSE\\chapter_4\\prisma\\schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
