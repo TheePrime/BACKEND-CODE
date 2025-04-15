@@ -28,13 +28,32 @@ Content-Type: application/json
 
 ### Get all todos GET /todos
 GET http://localhost:5000/todos
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQzOTY1ODg4LCJleHAiOjE3NDQwNTIyODh9.IraeNrIAxkI0eXN8TzTNbLhvt--Cc5FGs1IDSvBeoZQ
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ0MzExMzkzLCJleHAiOjE3NDQzOTc3OTN9.3NXFAYc8O9Yy92jcgR-bAeiqfqmhgogl1BDH1GDrk5Y
 
 ### Create a todo POST /todos
 POST http://localhost:5000/todos
-Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQzOTY1ODg4LCJleHAiOjE3NDQwNTIyODh9.IraeNrIAxkI0eXN8TzTNbLhvt--Cc5FGs1IDSvBeoZQ
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ0MzA5MzcwLCJleHAiOjE3NDQzOTU3NzB9.t8oukegddjUCOA6pdF5sE2rczV3m9v1jz9wfWcmOE4Q
 Content-Type: application/json
 
 {
     "task":"Finish coding"
 }
+
+### Update a todo PUT /todos/:id
+PUT http://localhost:5000/todos/3
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ0MzExMzkzLCJleHAiOjE3NDQzOTc3OTN9.3NXFAYc8O9Yy92jcgR-bAeiqfqmhgogl1BDH1GDrk5Y
+Content-Type: application/json
+
+{
+    
+    "completed": 1
+}
+
+### Delete a todo  DELETE /todos/:id
+DELETE http://localhost:5000/todos/2
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ0MzExMzkzLCJleHAiOjE3NDQzOTc3OTN9.3NXFAYc8O9Yy92jcgR-bAeiqfqmhgogl1BDH1GDrk5Y
+
+
+### Get a todo by id  GET /todos/:id
+GET http://localhost:5000/todos/3
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ0MzExMzkzLCJleHAiOjE3NDQzOTc3OTN9.3NXFAYc8O9Yy92jcgR-bAeiqfqmhgogl1BDH1GDrk5Y
